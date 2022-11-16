@@ -18,7 +18,7 @@ const httpOptions = {
 export class AppComponent {
   title = 'angular-todo-app';
   
-  private readonly ROOT_URL = 'http://springawsdemo2-env.eba-gpepswai.us-east-1.elasticbeanstalk.com/employee/'
+  private readonly ROOT_URL = 'https://springawsdemo2-env.eba-gpepswai.us-east-1.elasticbeanstalk.com/employee/'
 
   employees: Observable<Employee[]>;
 
