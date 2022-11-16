@@ -1,0 +1,37 @@
+<app-main></app-main>
+
+<div *ngFor="let employee of employees | async">
+	{{ employee | json }}
+</div>
+
+
+<div className='bg-red-700 rounded p-10 m-2 drop-shadow-lg grid grid-cols-2'>
+	<input
+		value='firstName'
+		[(ngModel)]='firstName'
+		placeholder='First name'
+	/>
+	<input
+		value='lastName'
+		[(ngModel)]='lastName'
+		placeholder='Last name'
+	/>
+	<input
+		value='email'
+		[(ngModel)]='email'
+		placeholder='Email'
+	/>
+	<input
+		value='departmentName'
+		[(ngModel)]='departmentName'
+		placeholder='Department name'
+	/>
+	<input
+		value='departmentCode'
+		[(ngModel)]='departmentCode'
+		placeholder='Department code'
+	/>
+	<button (click)="add()">Add</button>
+</div>
+
+<router-outlet></router-outlet>
